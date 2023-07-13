@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 230, 230);
+    font-size: 55px;
+    font-family: roboto;
+    font-weight: 300;
+}
