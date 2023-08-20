@@ -17,3 +17,26 @@ body {
     justify-content: center;
     padding-top: 30px;
 }
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.playerImgs , .computerImgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.imgP {
+    display: flex;
+    width: 200px;
+    height: auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+}
