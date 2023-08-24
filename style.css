@@ -34,9 +34,44 @@ body {
 
 .imgP {
     display: flex;
-    width: 200px;
+    width: 300px;
     height: auto;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-around;
+    
+}
+
+.ties {
+    display: flex;
+    justify-content: center;
+    font-family: roboto;
+    font-weight: 200;
+}
+
+.playerScore {
+    display: flex;
+    margin-left: 20px;
+    font-family: roboto;
+}
+
+.computerScore {
+    display: flex;
+    margin-left: 20px;
+    font-family: roboto;
+}
+
+.pGameContainer{
+    display: flex;
+    border: solid 1px gainsboro;
+    padding: 20px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: rgb(236, 240, 244);
+}
+
+.bodyHolder {
+    background-color: rgb(231, 231, 231);
 }

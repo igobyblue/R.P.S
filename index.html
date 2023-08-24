@@ -5,38 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <img src="./rpsimages/">
+    
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <div class="header">Rock Paper Scissors</div>
-    <div class="container">
-        <button onclick="game()">Start Game</button>
-    </div>
-
- <div class="score">
-    <h1 class="ties">Ties:0</h1> 
- </div>
- <div class="winnerDiv">
-    <h1 class="winner"></h1>
-    <button class="reset" onclick="resetGame()"> Play Again?</button>
- </div>
-    <div class="playerSection">
-        <h3 class="playerChoice"></h3>
-        <h3 class="playerScore">Score:0</h3>
-        <div class="playerImgs">
-            <img src=./rpsimages/ROCK1.png class="imgP" alt="hand forming a rock" id="rock">
-            <img src=./rpsimages/paper1.png class="imgP" alt="hand forming paper" id="paper">
-            <img src=./rpsimages/scissors1.png class="imgP" alt="hand forming scissors" id="scissors">
+    <div class="bodyHolder">
+        <div class="score">
+            <h1 class="ties">Ties: 0</h1> 
         </div>
-    </div>
-    <div class="computerSection">
-        <h3 class="computerChoice"></h3>
-        <h3 class="computerScore">Score:0</h3>
-        <div class="computerImgs">
-            <img src=./rpsimages/ROCK1.png class="imgP" alt="hand forming a rock"/>
-            <img src=./rpsimages/paper1.png class="imgP" alt="hand forming paper"/>
-            <img src=./rpsimages/scissors1.png class="imgP" alt="hand forming scissors" />
+        <div class="winnerDiv">
+            <h1 class="winner"></h1>
+         <button class="reset" onclick="resetGame()"> Play Again?</button>
+        </div>
+        <div class="playerSection">
+            <h3 class="playerInput"></h3>
+            <div class="pGameContainer">
+            <h3 class="playerScore">Score: 0</h3>
+                <div class="playerImgs">
+                 <img src="./images/ROCK1.png" alt="hand forming a rock" class="imgP" id="rock"/> 
+                 <img src="./images/paper1.png"  alt="hand forming paper" class="imgP" id="paper"/>
+                    <img src="./images/scissors1.png" alt="hand forming scissors" class="imgP" id="scissors"/>
+                </div>
+            </div>
+        </div>
+        <div class="computerSection">
+            <h3 class="computerChoice"></h3>
+            <div class="pGameContainer">
+                <h3 class="computerScore">Score: 0</h3>
+                <div class="computerImgs">
+                    <img src="./images/ROCK1.png" class="imgP" alt="hand forming a rock"/>
+                    <img src="./images/paper1.png" class="imgP" alt="hand forming paper"/>
+                    <img src="./images/scissors1.png" class="imgP" alt="hand forming scissors" />
+                </div>
+            </div>
         </div>
     </div>
 </body>
