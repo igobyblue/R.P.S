@@ -1,21 +1,25 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
+    
 }
 
 .header {
     display: flex;
     justify-content: center;
-    background-color: rgb(235, 230, 230);
+    background-color: rgb(231, 231, 231);
     font-size: 55px;
     font-family: roboto;
-    font-weight: 300;
+    font-weight: 400;
+    padding-bottom: 30px;
+    margin-bottom: -25px;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .gameContainer {
@@ -39,29 +43,51 @@ body {
     flex-wrap: nowrap;
     align-content: center;
     justify-content: space-around;
+    transition-duration: 500ms;
+    cursor: pointer;
     
 }
+
 
 .ties {
     display: flex;
     justify-content: center;
     font-family: roboto;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .playerScore {
     display: flex;
     margin-left: 20px;
     font-family: roboto;
+    font-weight: 400;
 }
 
 .computerScore {
     display: flex;
     margin-left: 20px;
     font-family: roboto;
+    font-weight: 400;
 }
 
 .pGameContainer{
+    display: flex;
+    border: solid 1px gainsboro;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: rgb(236, 240, 244);
+}
+
+.bodyHolder {
+    background-color: rgb(231, 231, 231);
+    padding-bottom: 150px;
+}
+
+.cGameContainer{
     display: flex;
     border: solid 1px gainsboro;
     padding: 20px;
@@ -72,6 +98,126 @@ body {
     background-color: rgb(236, 240, 244);
 }
 
-.bodyHolder {
-    background-color: rgb(231, 231, 231);
+.playerInput{
+    display: flex;
+    margin-left: 20px;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+.computerInput{
+    display: flex;
+    margin-left: 20px;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+.winner{
+    display: flex;
+    margin-left: 20px;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+#rock:hover {
+    width: 325px;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem rgb(243, 89, 65));
+}
+
+#paper:hover {
+    width: 325px;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+    
+}
+
+#scissors:hover {
+    width: 325px;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem rgb(58, 172, 247));
+    
+}
+
+.chosen {
+    width: 325px;
+    height: auto;
+}
+
+.rock {
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    transition-duration: 500ms;
+}
+
+.paper {
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    transition-duration: 500ms;
+}
+
+.scissors {
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    transition-duration: 500ms;
+}
+
+.scissors.chosen {
+    width: 325px;
+    height: auto;
+    filter: drop-shadow(0 0 1rem rgb(58, 172, 247))
+}
+
+.paper.chosen {
+    width: 325px;
+    height: auto;
+    filter: drop-shadow(0 0 1rem rgb(255, 217, 0));
+}
+
+.rock.chosen {
+    width: 325px;
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1rem rgb(243, 89, 65));
+}
+
+.reset {
+    display: none;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font: roboto;
+    font-size: x-large;
+    font-weight: bold;
+    border: 0;
+    color: aliceblue;
+    align-content: flex-start;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.winnerDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
 }
